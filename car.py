@@ -8,8 +8,8 @@ class Car (Vehicle):
 
     def display_info (self):
         super().display_info()
-        print(f"Fuel type:  + {self.fuel_type}")
-        print(f"Transmission: + {self.transmission}")
+        print(f"Fuel type:  {self.fuel_type}")
+        print(f"Transmission: {self.transmission}")
         print(f"Category: {self.category}")
 
 
