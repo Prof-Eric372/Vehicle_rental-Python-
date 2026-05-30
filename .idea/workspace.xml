@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="feat: add Car class with inheritance from Vehicle">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/motorcycle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/truck.py" afterDir="false" />
+    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="feat: add vehicle listing and availability check">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car.py" beforeDir="false" afterPath="$PROJECT_DIR$/car.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,13 +92,38 @@
       <option name="project" value="LOCAL" />
       <updated>1780024081887</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add vehicle listing and availability check">
+      <option name="closed" value="true" />
+      <created>1780097774145</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780097774146</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: add vehicle listing and availability check">
+      <option name="closed" value="true" />
+      <created>1780097789993</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1780097789993</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add vehicle listing and availability check">
+      <option name="closed" value="true" />
+      <created>1780097820967</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1780097820967</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add Vehicle base class with rental methods" />
     <MESSAGE value="feat: add Car class with inheritance from Vehicle" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Car class with inheritance from Vehicle" />
+    <MESSAGE value="feat: add vehicle listing and availability check" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add vehicle listing and availability check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
