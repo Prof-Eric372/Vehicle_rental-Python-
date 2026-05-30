@@ -16,10 +16,32 @@ for v in vehicles:
 
 
 #AVAILABLE VEHICLES
+print("===AVAILABLE VEHICLES ===")
 for v in vehicles:
-    print("===AVAILABLE VEHICLES ===")
     if v.is_available:
         print(f"{v.brand} {v.model} - {v.plate}")
         print("------------------------")
         v.display_info()
+
+#RENT FUNCTION:
+plate = input("Digite a placa: ").upper()
+
+for v in vehicles:
+    if v.plate == plate:
+        if v.is_available:
+            v.rent()
+            print("Veículo alugado com sucesso!")
+        else:
+            print("Veículo indisponível!")
+
+# RETURN VEHICLES
+plate = input("Digite a placa para devolver: ").upper()
+
+for v in vehicles:
+    if v.plate == plate:
+        if not v.is_available:
+            v.return_vehicle()
+            print("Veículo devolvido com sucesso!")
+        else:
+            print("Veículo não estava alugado!")
 
