@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="feat: add vehicle listing and availability check">
+    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="feat: add rent and return vehicle by plate">
+      <change afterPath="$PROJECT_DIR$/customer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -47,6 +49,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.car.executor": "Run",
+    "Python.customer.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -116,14 +119,31 @@
       <option name="project" value="LOCAL" />
       <updated>1780097820967</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: add rent and return vehicle by plate">
+      <option name="closed" value="true" />
+      <created>1780182270261</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1780182270261</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: add rent and return vehicle by plate">
+      <option name="closed" value="true" />
+      <created>1780182290928</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1780182290928</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add Vehicle base class with rental methods" />
     <MESSAGE value="feat: add Car class with inheritance from Vehicle" />
     <MESSAGE value="feat: add vehicle listing and availability check" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add vehicle listing and availability check" />
+    <MESSAGE value="feat: add rent and return vehicle by plate" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add rent and return vehicle by plate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

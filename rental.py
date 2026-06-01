@@ -1,0 +1,21 @@
+from vehicle import Vehicle
+from customer import Customer
+
+class Rental:
+    def __init__(self, customer, vehicle, rental_date, return_date, price_per_day, total_price):
+        self.customer = customer
+        self.vehicle = vehicle
+        self.rental_date = rental_date
+        self.return_date = return_date
+        self.price_per_day = price_per_day
+        self.total_price = total_price
+
+    def display_info(self):
+        print(f'Customer Name: {self.customer.name}')
+        print(f"Vehicle Name: {self.vehicle.model}")
+        print(f"Rental Date: {self.rental_date}")
+        print(f"Return Date: {self.return_date}")
+        print(f"Price per Day: {self.price_per_day}")
+        print(f"Total Price: {self.total_price}")
+
+
