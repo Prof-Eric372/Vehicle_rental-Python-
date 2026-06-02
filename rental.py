@@ -1,5 +1,6 @@
 from vehicle import Vehicle
 from customer import Customer
+from datetime import datetime
 
 class Rental:
     def __init__(self, customer, vehicle, rental_date, return_date, price_per_day, total_price):
@@ -19,3 +20,15 @@ class Rental:
         print(f"Total Price: {self.total_price}")
 
 
+    def calculate_total(self):
+        days = (self.return_date - self.rental_date).days
+        self.total_price = days * self.price_per_day
+        return self.total_price
+
+    def display_info(self):
+        print(f"Customer: {self.customer.name}")
+        print(f"Vehicle: {self.vehicle.brand} {self.vehicle.model}")
+        print(f"Rental Date: {self.rental_date.strftime('%d/%m/%Y')}")
+        print(f"Return Date: {self.return_date.strftime('%d/%m/%Y')}")
+        print(f"Price per Day: R${self.price_per_day}")
+        print(f"Total Price: R${self.total_price}")

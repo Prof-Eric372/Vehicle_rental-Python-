@@ -4,6 +4,7 @@ from motorcycle import Motorcycle
 from truck import Truck
 from customer import Customer
 from rental import Rental
+from datetime import datetime
 
 vehicles = []
 #add vehicles
@@ -51,5 +52,5 @@ for v in vehicles:
 customer1 = Customer("Carlin", "057.876.099-32", True, "45378967-8", "91934558000")
 
 #RENTAL
-rental1 = Rental(customer1, vehicles[0],"2026-05-01", "2026-05-15", 200, 2000 )
+rental1 = Rental(customer1, vehicles[0],datetime(2026, 5, 1), datetime(2026, 5,15), 200, 2000 )
 rental1.display_info()
