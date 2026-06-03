@@ -52,5 +52,6 @@ for v in vehicles:
 customer1 = Customer("Carlin", "057.876.099-32", True, "45378967-8", "91934558000")
 
 #RENTAL
-rental1 = Rental(customer1, vehicles[0],datetime(2026, 5, 1), datetime(2026, 5,15), 200, 2000 )
+rental1 = Rental(customer1, vehicles[0],datetime(2026, 5, 1), datetime(2026, 5,15), 0,0)
+rental1.calculate_total()
 rental1.display_info()

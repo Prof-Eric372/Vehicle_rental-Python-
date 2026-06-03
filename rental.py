@@ -1,6 +1,8 @@
 from vehicle import Vehicle
 from customer import Customer
 from datetime import datetime
+from price_table import PRICE_TABLE
+
 
 class Rental:
     def __init__(self, customer, vehicle, rental_date, return_date, price_per_day, total_price):
@@ -22,7 +24,8 @@ class Rental:
 
     def calculate_total(self):
         days = (self.return_date - self.rental_date).days
-        self.total_price = days * self.price_per_day
+        price = PRICE_TABLE[self.vehicle.category]
+        self.total_price = days * price
         return self.total_price
 
     def display_info(self):
