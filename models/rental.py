@@ -20,10 +20,16 @@ class Rental:
 
 
     def calculate_total(self):
-        days = (self.return_date - self.rental_date).days
-        price = PRICE_TABLE[self.vehicle.category]
-        self.total_price = days * price
-        return self.total_price
+        def calculate_total(self):
+            try:
+                days = (self.return_date - self.rental_date).days
+                price = PRICE_TABLE[self.vehicle.category]
+                self.total_price = days * price
+                return self.total_price
+            except ValueError:
+                print("Data inválida!")
+            except KeyError:
+                print("Categoria não encontrada na tabela de preços!")
 
     def display_info(self):
         print(f"Customer: {self.customer.name}")
