@@ -1,7 +1,4 @@
-from vehicle import Vehicle
-from customer import Customer
-from datetime import datetime
-from price_table import PRICE_TABLE
+from config.price_table import PRICE_TABLE
 
 
 class Rental:

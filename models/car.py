@@ -1,4 +1,4 @@
-from vehicle import Vehicle
+from models.vehicle import Vehicle
 class Car (Vehicle):
     def __init__(self, plate, brand, model, color, year, fuel_type,transmission, category):
         super().__init__(plate, brand, model, color, year,)

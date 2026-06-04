@@ -1,4 +1,4 @@
-from vehicle import Vehicle
+from models.vehicle import Vehicle
 
 class Motorcycle (Vehicle):
     def __init__(self, plate, brand, model, color, year, engine_cc, type, has_storage):

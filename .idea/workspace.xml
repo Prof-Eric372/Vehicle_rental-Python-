@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="feat: add price table and automatic price calculation by category">
+    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="feat: add improved vehicle search by plate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/car.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/customer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/motorcycle.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/motorcycle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/price_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/price_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/rental.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/truck.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/truck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/vehicle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +62,12 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ericb\PycharmProjects\VehicleRental\config" />
+      <recent name="C:\Users\ericb\PycharmProjects\VehicleRental\models" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -182,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780452342134</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: add improved vehicle search by plate">
+      <option name="closed" value="true" />
+      <created>1780533592175</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1780533592175</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -193,13 +214,14 @@
     <MESSAGE value="feat: add price calculation and rental display info" />
     <MESSAGE value="feat: add Customer and Rental classes" />
     <MESSAGE value="feat: add price table and automatic price calculation by category" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add price table and automatic price calculation by category" />
+    <MESSAGE value="feat: add improved vehicle search by plate" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add improved vehicle search by plate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/car.py</url>
+          <url>file://$PROJECT_DIR$/models/car.py</url>
           <line>1</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

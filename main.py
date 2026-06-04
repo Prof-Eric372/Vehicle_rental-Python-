@@ -1,9 +1,8 @@
-from vehicle import Vehicle
-from car import Car
-from motorcycle import Motorcycle
-from truck import Truck
-from customer import Customer
-from rental import Rental
+from models.car import Car
+from models.motorcycle import Motorcycle
+from models.truck import Truck
+from models.customer import Customer
+from models.rental import Rental
 from datetime import datetime
 
 vehicles = []
