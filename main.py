@@ -26,6 +26,18 @@ for v in vehicles:
         print("------------------------")
         v.display_info()
 
+ #SEARCH VEHICLE
+plate = input("Buscar veículo por placa: ").upper()
+found = False
+
+for v in vehicles:
+    if v.plate == plate:
+        v.display_info()
+        found = True
+
+if not found:
+    print("Veículo não encontrado!")
+
 #RENT FUNCTION:
 plate = input("Digite a placa: ").upper()
 

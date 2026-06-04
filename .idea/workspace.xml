@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="feat: add Customer and Rental classes">
-      <change afterPath="$PROJECT_DIR$/price_table.py" afterDir="false" />
+    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="feat: add price table and automatic price calculation by category">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rental.py" beforeDir="false" afterPath="$PROJECT_DIR$/rental.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780362859132</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: add price table and automatic price calculation by category">
+      <option name="closed" value="true" />
+      <created>1780452342134</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1780452342134</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -186,7 +192,8 @@
     <MESSAGE value="feat: add rent and return vehicle by plate" />
     <MESSAGE value="feat: add price calculation and rental display info" />
     <MESSAGE value="feat: add Customer and Rental classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Customer and Rental classes" />
+    <MESSAGE value="feat: add price table and automatic price calculation by category" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add price table and automatic price calculation by category" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
