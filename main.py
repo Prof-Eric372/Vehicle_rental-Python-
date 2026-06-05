@@ -1,3 +1,4 @@
+from config.database import create_table, insert_vehicle
 from models.car import Car
 from models.motorcycle import Motorcycle
 from models.truck import Truck
@@ -66,3 +67,9 @@ customer1 = Customer("Carlin", "057.876.099-32", True, "45378967-8", "9193455800
 rental1 = Rental(customer1, vehicles[0],datetime(2026, 5, 1), datetime(2026, 5,15), 0,0)
 rental1.calculate_total()
 rental1.display_info()
+
+#TABLE
+create_table()
+insert_vehicle("Chevrolet", "Ônix", "Black", "QWJ873", 2023)
+insert_vehicle("Honda", "Biz", "White", "QTU304", 2024)
+insert_vehicle("Mercedes", "Sprinter", "Black and Grey", "TSV951", 2021)

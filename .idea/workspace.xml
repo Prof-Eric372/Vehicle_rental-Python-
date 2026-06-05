@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="refactor: organize project structure into models and config folders">
+    <list default="true" id="bd2ca14e-8569-415c-9f06-d68cfd3713e1" name="Changes" comment="feat: add error handling for invalid date and category not found">
+      <change afterPath="$PROJECT_DIR$/config/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/rental.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/rental.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +44,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.car.executor&quot;: &quot;Run&quot;,
-    &quot;Python.customer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rental.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.car.executor": "Run",
+    "Python.customer.executor": "Run",
+    "Python.database.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.rental.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ericb\PycharmProjects\VehicleRental\config" />
@@ -204,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780534784192</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: add error handling for invalid date and category not found">
+      <option name="closed" value="true" />
+      <created>1780537551803</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1780537551803</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -217,7 +228,8 @@
     <MESSAGE value="feat: add price table and automatic price calculation by category" />
     <MESSAGE value="feat: add improved vehicle search by plate" />
     <MESSAGE value="refactor: organize project structure into models and config folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: organize project structure into models and config folders" />
+    <MESSAGE value="feat: add error handling for invalid date and category not found" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add error handling for invalid date and category not found" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
