@@ -1,4 +1,6 @@
 import sqlite3
+from models.vehicle import Vehicle
+
 
 def create_connection():
     conn = sqlite3.connect("vehicle_rental.db")
@@ -35,3 +37,24 @@ def insert_vehicle(brand, model, color, plate, year):
         print(f"Veículo com placa {plate} já cadastrado!")
     finally:
         conn.close()
+
+def get_vehicles():
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM vehicles")
+    vehicles = cursor.fetchall()
+    conn.close()
+    return vehicles
+
+def get_vehicles_as_objects ():
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM vehicles")
+    rows = cursor.fetchall()
+    conn.close()
+
+    vehicles = []
+    for row in rows:
+        v = Vehicle(row[4], row[1], row[2], row[3], row[5])
+        vehicles.append(v)
+    return vehicles
