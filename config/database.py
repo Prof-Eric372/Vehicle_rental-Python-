@@ -58,3 +58,15 @@ def get_vehicles_as_objects ():
         v = Vehicle(row[4], row[1], row[2], row[3], row[5])
         vehicles.append(v)
     return vehicles
+
+def update_vehicle_availability(plate, is_available):
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute("""
+            UPDATE vehicles 
+            SET is_available = ?
+            WHERE plate = ?
+        """, (is_available, plate))
+    conn.commit()
+    conn.close()
+
