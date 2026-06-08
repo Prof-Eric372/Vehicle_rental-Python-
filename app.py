@@ -1,8 +1,8 @@
 from flask import Flask, jsonify, request
-from config.database import get_vehicles, update_vehicle_availability
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required
 import bcrypt
 from config.database import get_vehicles, update_vehicle_availability, insert_user, get_user, create_users_table
+from flask import render_template
 
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = 'vehiclerental_secret_key'
@@ -92,6 +92,11 @@ def login():
         token = create_access_token(identity=data['username'])
         return jsonify({"token": token})
     return jsonify({"message": "Usuário ou senha inválidos!"}), 401
+
+@app.route('/')
+def index():
+    vehicles = get_vehicles()
+    return render_template('index.html', vehicles=vehicles)
 
 if __name__ == '__main__':
     app.run(debug=True)
