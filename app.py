@@ -1,7 +1,14 @@
 from flask import Flask, jsonify, request
 from config.database import get_vehicles, update_vehicle_availability
+from flask_jwt_extended import JWTManager, create_access_token, jwt_required
+import bcrypt
+from config.database import get_vehicles, update_vehicle_availability, insert_user, get_user, create_users_table
 
 app = Flask(__name__)
+app.config['JWT_SECRET_KEY'] = 'vehiclerental_secret_key'
+jwt = JWTManager(app)
+
+create_users_table()
 
 @app.route('/vehicles', methods=['GET'])
 def list_vehicles():
@@ -36,6 +43,7 @@ def get_vehicle_by_plate(plate):
 
 
 @app.route('/rent', methods=['POST'])
+@jwt_required()
 def rent_vehicle():
     data = request.json
     plate = data['plate'].upper()
@@ -68,6 +76,22 @@ def return_vehicle():
 
     return jsonify({"message": "Veículo não encontrado!"}), 404
 
+@app.route('/register', methods=['POST'])
+def register():
+    data = request.json
+    username = data['username']
+    password = bcrypt.hashpw(data['password'].encode('utf-8'), bcrypt.gensalt())
+    insert_user(username, password)
+    return jsonify({"message": "Usuário cadastrado com sucesso!"})
+
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.json
+    user = get_user(data['username'])
+    if user and bcrypt.checkpw(data['password'].encode('utf-8'), user[2]):
+        token = create_access_token(identity=data['username'])
+        return jsonify({"token": token})
+    return jsonify({"message": "Usuário ou senha inválidos!"}), 401
 
 if __name__ == '__main__':
     app.run(debug=True)
